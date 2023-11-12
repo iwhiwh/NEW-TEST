@@ -20,7 +20,7 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
-"value":"6624330389:AAF2SF3vWP4VztPPdZAF8o6yQIOov8QlnpY",
+"value":"6488653342:AAHnho92aBq3gXs8eyKHwo_pzx5lL8MbjRY",
             "required": true
         },
         "API_ID": {
@@ -58,15 +58,17 @@
         },
         "AUTH_CHANNEL": {
             "description": "ID of channel.Make sure bot is admin in this channel. Without subscribing this channel users cannot use bot.",
+            "value":"-1001752626076",
             "required": false
         },
         "DATABASE_URI": {
             "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
-"value":"mongodb+srv://Isjsjsjjsjsk:nTO7SePDmCnKiswE@cluster0.hvj4dgv.mongodb.net/?retryWrites=true&w=majority",
+"value":"mongodb+srv://happythehour:skumar(2006)@cluster0.wttyshn.mongodb.net/?retryWrites=true&w=majority",
             "required": true
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "value":"PMBOT",
             "required": false
         },
         "COLLECTION_NAME": {
