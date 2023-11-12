@@ -919,7 +919,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                               InlineKeyboardButton('🫨ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=SUPPORT_CHAT),
                               InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                             ],[
-                              InlineKeyboardButton('🚀 Fast Download / Watch Online🖥️', callback_data=f'generate_stream_link:{file_id}')
+                              InlineKeyboardButton("🚀 Fast Download / Watch Online🖥️", callback_data=f'generate_stream_link:{file_id}')
                              ]
                             ]
                         )
@@ -1012,7 +1012,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                   InlineKeyboardButton('🫨ᴍᴏᴠɪᴇ ɢʀᴏᴜᴘ', url=SUPPORT_CHAT),
                   InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                 ],[
-                  InlineKeyboardButton("😇ᴍᴏᴠɪᴇ ʀᴇQᴜᴇꜱᴛ ɢʀᴏᴜᴘ😇", url="https://t.me/+4nzja42ELQwzOWVl")
+                  InlineKeyboardButton("🚀 Fast Download / Watch Online🖥️", callback_data=f'generate_stream_link:{file_id}')
                  ]
                 ]
             )
@@ -1538,8 +1538,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
 
-    elif data.startswith("generate_stream_link"):
-        _, file_id = data.split(":")
+    elif query.data.startswith("generate_stream_link"):
+        _, file_id = query.data.split(":")
         try:
             user_id = query.from_user.id
             username =  query.from_user.mention 
@@ -1564,7 +1564,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                     InlineKeyboardButton('▶Stream online', url=lazy_stream)]])  # web stream Link
             )
             await query.message.reply_text(
-                text=(STREAM_CAP),
+                text=(STREAM_CAP)
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 📥", url=lazy_download),  # we download Link
