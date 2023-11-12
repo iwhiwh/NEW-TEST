@@ -1564,7 +1564,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                                                     InlineKeyboardButton('▶Stream online', url=lazy_stream)]])  # web stream Link
             )
             await query.message.reply_text(
-                text=(STREAM_CAP)
+                text=(STREAM_CAP),
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 📥", url=lazy_download),  # we download Link
