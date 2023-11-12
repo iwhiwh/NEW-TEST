@@ -20,22 +20,27 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
+"value":"6624330389:AAF2SF3vWP4VztPPdZAF8o6yQIOov8QlnpY",
             "required": true
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
+"value":"24579842",
             "required": true
         },
         "API_HASH": {
             "description": "Get this value from https://my.telegram.org",
+"value":"ec6105bf1a02c98f837300546dc341d1",
             "required": true
         },
         "CHANNELS": {
             "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+"value":"-1001867538832",
             "required": false
         },
         "ADMINS": {
             "description": "Username or ID of Admin. Separate multiple Admins by space.",
+"value":"1991522624",
             "required": true
         },
         "PICS": {
@@ -44,6 +49,7 @@
         },
         "LOG_CHANNEL": {
             "description": "Bot Logs,Give a channel id with -100xxxxxxx",
+"value":"-1001939252420",
             "required": true
         },
         "AUTH_USERS": {
@@ -56,6 +62,7 @@
         },
         "DATABASE_URI": {
             "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+"value":"mongodb+srv://Isjsjsjjsjsk:nTO7SePDmCnKiswE@cluster0.hvj4dgv.mongodb.net/?retryWrites=true&w=majority",
             "required": true
         },
         "DATABASE_NAME": {
