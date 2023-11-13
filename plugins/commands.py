@@ -84,7 +84,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton("↻ Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**👉 पहले हमारे चेनल को जॉइन करे....😒\n👉 तभी मूवी मिलेगा....😏\n👉 फिर Try Again पर क्लिक करो....😎**",
+            text="**👉 पहले हमारे चेनल को जॉइन करे....😒\n👉 फिर Try Again पर क्लिक करो....😎**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -150,7 +150,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                          InlineKeyboardButton("🚀 Fast Download / Watch Online🖥️", callback_data=f'generate_stream_link:{file_id}')
+                          InlineKeyboardButton("🎁 Oɴʟɪɴᴇ Wᴀᴛᴄʜ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🎁", callback_data=f'generate_stream_link:{file_id}')
                          ]
                         ]
                     )
@@ -166,7 +166,7 @@ async def start(client, message):
                     reply_markup=InlineKeyboardMarkup(
                         [
                             [
-                          InlineKeyboardButton("🚀 Fast Download / Watch Online🖥️", callback_data=f'generate_stream_link:{file_id}')
+                          InlineKeyboardButton("🎁 Oɴʟɪɴᴇ Wᴀᴛᴄʜ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🎁", callback_data=f'generate_stream_link:{file_id}')
                          ]
                         ]
                     )
@@ -327,7 +327,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                      InlineKeyboardButton("🚀 Fast Download / Watch Online🖥️", callback_data=f'generate_stream_link:{file_id}')
+                      InlineKeyboardButton("🎁 Oɴʟɪɴᴇ Wᴀᴛᴄʜ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🎁", callback_data=f'generate_stream_link:{file_id}')
                      ]
                     ]
                 )
@@ -382,7 +382,7 @@ async def start(client, message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                      InlineKeyboardButton("🚀 Fast Download / Watch Online🖥️", callback_data=f'generate_stream_link:{file_id}')
+                      InlineKeyboardButton("🎁 Oɴʟɪɴᴇ Wᴀᴛᴄʜ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🎁", callback_data=f'generate_stream_link:{file_id}')
                      ]
                     ]
                 )
@@ -436,7 +436,7 @@ async def start(client, message):
         reply_markup=InlineKeyboardMarkup(
             [
                 [
-              InlineKeyboardButton("🚀 Fast Download / Watch Online🖥️", callback_data=f'generate_stream_link:{file_id}')
+              InlineKeyboardButton("🎁 Oɴʟɪɴᴇ Wᴀᴛᴄʜ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🎁", callback_data=f'generate_stream_link:{file_id}')
              ]
             ]
         )
