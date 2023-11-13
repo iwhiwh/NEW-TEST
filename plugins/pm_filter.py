@@ -878,7 +878,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                         reply_markup=InlineKeyboardMarkup(
                             [
                                 [
-                              InlineKeyboardButton("🚀 Fast Download / Watch Online🖥️", callback_data=f'generate_stream_link:{file_id}')
+                              InlineKeyboardButton("🎁 Oɴʟɪɴᴇ Wᴀᴛᴄʜ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🎁", callback_data=f'generate_stream_link:{file_id}')
                              ]
                             ]
                         )
@@ -968,7 +968,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=InlineKeyboardMarkup(
                 [
                 [
-                  InlineKeyboardButton("🚀 Fast Download / Watch Online🖥️", callback_data=f'generate_stream_link:{file_id}')
+                  InlineKeyboardButton("🎁 Oɴʟɪɴᴇ Wᴀᴛᴄʜ / Fᴀꜱᴛ Dᴏᴡɴʟᴏᴀᴅ 🎁", callback_data=f'generate_stream_link:{file_id}')
                  ]
                 ]
             )
@@ -1513,7 +1513,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await xo.delete()
 
             await log_msg.reply_text(
-                text=f"•• ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ #{user_id} \n•• ᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\nFile Name : {fileName}",
+                text=f"ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ \n\ntg://openmessage?user_id={user_id} \n\nᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\nFile Name : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download),  # we download Link
