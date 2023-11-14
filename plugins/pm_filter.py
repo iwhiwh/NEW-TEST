@@ -1516,8 +1516,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 text=f"ʟɪɴᴋ ɢᴇɴᴇʀᴀᴛᴇᴅ ꜰᴏʀ ɪᴅ \n\ntg://openmessage?user_id={user_id} \n\nᴜꜱᴇʀɴᴀᴍᴇ : {username} \n\nFile Name : {fileName}",
                 quote=True,
                 disable_web_page_preview=True,
-                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("web Download", url=lazy_download),  # we download Link
-                                                    InlineKeyboardButton('▶Stream online', url=lazy_stream)]])  # web stream Link
+                reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("📥 ᴅᴏᴡɴʟᴏᴀᴅ 📥", url=lazy_download),  # we download Link
+                                                    InlineKeyboardButton('🖥️ ꜱᴛʀᴇᴇᴍ 🖥️', url=lazy_stream)]])  # web stream Link
             )
             await query.message.reply_text(
                 text=(STREAM_CAP),
