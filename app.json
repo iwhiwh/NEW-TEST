@@ -80,7 +80,6 @@
 "FQDN": {
             "description": "Heroku Link Dalo.",
             "required": false
-        }
     },
     "addons": [],
     "buildpacks": [{
