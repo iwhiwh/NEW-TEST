@@ -144,7 +144,7 @@ async def next_page(bot, query):
     #         for file in files
     #     ]
 
-        btn.append(0, [
+        btn.insert(0, [
             InlineKeyboardButton("🟥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 🟩", callback_data=f"sendfiles#{key}")
         ])
     else:
@@ -411,7 +411,7 @@ async def filter_languages_cb_handler(client: Client, query: CallbackQuery):
             [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
         )
     # if ENABLE_SHORTLINK == True:
-    btn.append(0, [
+    btn.insert(0, [
         InlineKeyboardButton("🟥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 🟩", callback_data=f"sendfiles#{key}")
     ])
     # else:
@@ -1834,7 +1834,7 @@ async def auto_filter(client, msg, spoll=False):
     #         InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
     #         InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"send_fall#{pre}#{message.chat.id}-{message.id}#{0}")
     #     ])
-        btn.append(0, [
+        btn.insert(0, [
             InlineKeyboardButton("🟥 𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀 🟩", callback_data=f"sendfiles#{key}")
         ])
     # if ENABLE_TUTORIAL == True:
