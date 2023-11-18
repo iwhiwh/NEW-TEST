@@ -77,10 +77,6 @@
             "required": false
         }
     },
-"FQDN": {
-            "description": "Heroku Link Dalo.",
-            "required": false
-    },
     "addons": [],
     "buildpacks": [{
         "url": "heroku/python"
