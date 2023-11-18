@@ -20,7 +20,7 @@
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
-"value":"6488653342:AAHnho92aBq3gXs8eyKHwo_pzx5lL8MbjRY",
+"value":"6624330389:AAF2SF3vWP4VztPPdZAF8o6yQIOov8QlnpY",
             "required": true
         },
         "API_ID": {
@@ -68,7 +68,7 @@
         },
         "DATABASE_NAME": {
             "description": "Name of the database in mongoDB. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
-            "value":"PMBOT",
+            "value":"SANDIP",
             "required": false
         },
         "COLLECTION_NAME": {
