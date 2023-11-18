@@ -171,8 +171,7 @@ async def next_page(bot, query):
                 btn.insert(0, [
             InlineKeyboardButton("𝗦𝗲𝗻𝗱 𝗔𝗹𝗹 𝗙𝗶𝗹𝗲𝘀", callback_data=f"sendfiles#{key}")
         ])
-            
-        else:
+
             if 0 < offset <= int(MAX_B_TN):
                 off_set = 0
             elif offset == 0:
