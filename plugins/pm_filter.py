@@ -143,10 +143,6 @@ async def next_page(bot, query):
     #         ]
     #         for file in files
     #     ]
-
-        btn.insert(0, [
-            InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")
-        ])
     else:
         btn = []
     try:
@@ -171,6 +167,9 @@ async def next_page(bot, query):
                         InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
+                btn.append(0, [
+            InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")
+        ])
         else:
             if 0 < offset <= int(MAX_B_TN):
                 off_set = 0
@@ -192,6 +191,9 @@ async def next_page(bot, query):
                         InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                     ],
                 )
+                btn.append(0, [
+            InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")
+        ])
     except KeyError:
         await save_group_settings(query.message.chat.id, 'max_btn', True)
         if 0 < offset <= 10:
@@ -214,6 +216,9 @@ async def next_page(bot, query):
                     InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                 ],
             )
+            btn.append(0, [
+            InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")
+        ])
     # if ENABLE_SHORTLINK == True:
         # btn.insert(0, [
         #     InlineKeyboardButton("Sᴛᴀʀᴛ Bᴏᴛ", url=f"https://telegram.me/{temp.U_NAME}"),
