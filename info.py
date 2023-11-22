@@ -50,9 +50,9 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "PMBOT")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
 # Others
-VERIFY = bool(environ.get('VERIFY', True))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'upshrink.com')
-SHORTLINK_API = environ.get('SHORTLINK_API', '74ace0752a06a864509007b39b76444a6ed4752f')
+VERIFY = bool(environ.get('VERIFY', False))
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'onepagelink.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '82a500caa370e71bb752a2f4d7759f24af1b46cf')
 SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', '0')
 SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '0')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
