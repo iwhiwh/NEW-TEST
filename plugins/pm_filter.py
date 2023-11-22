@@ -145,7 +145,13 @@ async def next_page(bot, query):
     #         for file in files
     #     ]
 
-        
+        btn.insert(0, 
+            [
+#                InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ",  callback_data=f"quality#{key}")
+            ]
+        )
     try:
         if settings['max_btn']:
             if 0 < offset <= 10:
@@ -155,7 +161,6 @@ async def next_page(bot, query):
             else:
                 off_set = offset - 10
             if n_offset == 0:
-               
                btn.append(
                    [InlineKeyboardButton("⌫ 𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
                )
@@ -235,9 +240,7 @@ async def next_page(bot, query):
                     InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"),
                     InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")
                 ],
-            )btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
-                )
+            )
             btn.append(
                     [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                )
@@ -1791,6 +1794,13 @@ async def auto_filter(client, msg, spoll=False):
             ]
             for file in files
         ]
+        btn.insert(0, 
+            [
+#                InlineKeyboardButton("𝐒𝐞𝐧𝐝 𝐀𝐥𝐥", callback_data=f"sendfiles#{key}"),
+                InlineKeyboardButton("ʟᴀɴɢᴜᴀɢᴇs", callback_data=f"languages#{key}"),
+                InlineKeyboardButton("Qᴜᴀʟɪᴛʏꜱ",  callback_data=f"quality#{key}")
+            ]
+        )
     if offset != "":
         req = message.from_user.id if message.from_user else 0
         try:
@@ -1818,11 +1828,11 @@ async def auto_filter(client, msg, spoll=False):
                 )
     else:
         btn.append(
+            [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
+        )
+        btn.append(
                     [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
-        btn.append(
-            [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
-        ) 
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
     time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
