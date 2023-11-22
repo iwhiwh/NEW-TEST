@@ -162,16 +162,16 @@ async def next_page(bot, query):
                 off_set = offset - 10
             if n_offset == 0:
                btn.append(
+                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
+                )
+               btn.append(
                    [InlineKeyboardButton("⌫ 𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
                )
-                btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
-                )
             elif off_set is None:
-                btn.append([InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
                 btn.append(
                     [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
+                btn.append([InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
             else:
                 btn.append(
                     [
@@ -192,16 +192,16 @@ async def next_page(bot, query):
                 off_set = offset - int(MAX_B_TN)
             if n_offset == 0:
                 btn.append(
+                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
+                )
+                btn.append(
                     [InlineKeyboardButton("⌫ 𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages")]
                 )
-                btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
-                )
             elif off_set is None:
-                btn.append([InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"), InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
                 btn.append(
                     [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
+                btn.append([InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/int(MAX_B_TN))+1} / {math.ceil(total/int(MAX_B_TN))}", callback_data="pages"), InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
             else:
                 btn.append(
                     [
@@ -223,16 +223,16 @@ async def next_page(bot, query):
             off_set = offset - 10
         if n_offset == 0:
             btn.append(
+                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
+                )
+            btn.append(
                 [InlineKeyboardButton("⌫ 𝐁𝐀𝐂𝐊", callback_data=f"next_{req}_{key}_{off_set}"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages")]
             )
-            btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
-                )
         elif off_set is None:
-            btn.append([InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
             btn.append(
                     [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
+            btn.append([InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(f"{math.ceil(int(offset)/10)+1} / {math.ceil(total/10)}", callback_data="pages"), InlineKeyboardButton("𝐍𝐄𝐗𝐓 ➪", callback_data=f"next_{req}_{key}_{n_offset}")])
         else:
             btn.append(
                 [
@@ -563,33 +563,33 @@ async def filter_quality_cb_handler(client: Client, query: CallbackQuery):
         try:
             if settings['max_btn']:
                 btn.append(
-                    [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
+                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
                 btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
+                    [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
                 )
             else:
                 btn.append(
-                    [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
+                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
                 btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
+                    [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
                 )
         except KeyError:
             await save_group_settings(query.message.chat.id, 'max_btn', True)
             btn.append(
-                [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
-            )
-            btn.append(
                     [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
+            btn.append(
+                [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
+            )
     else:
+        btn.append(
+                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
+                )
         btn.append(
             [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
         )
-        btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
-                )
     try:
         await query.edit_message_reply_markup(
             reply_markup=InlineKeyboardMarkup(btn)
@@ -1806,33 +1806,33 @@ async def auto_filter(client, msg, spoll=False):
         try:
             if settings['max_btn']:
                 btn.append(
-                    [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
+                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
                 btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
+                    [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
                 )
             else:
                 btn.append(
-                    [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
+                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
                 btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
+                    [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/int(MAX_B_TN))}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
                 )
         except KeyError:
             await save_group_settings(message.chat.id, 'max_btn', True)
             btn.append(
+                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
+                )
+            btn.append(
                 [InlineKeyboardButton("𝐏𝐀𝐆𝐄", callback_data="pages"), InlineKeyboardButton(text=f"1/{math.ceil(int(total_results)/10)}",callback_data="pages"), InlineKeyboardButton(text="𝐍𝐄𝐗𝐓 ➪",callback_data=f"next_{req}_{key}_{offset}")]
             )
-            btn.append(
-                    [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
-                )
     else:
         btn.append(
-            [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
-        )
-        btn.append(
                     [InlineKeyboardButton("⫸---⫸----- 𝙎𝙚𝙣𝙙 𝘼𝙡𝙡 𝙁𝙞𝙡𝙚𝙨 -----⫷---⫷", callback_data=f"sendfiles#{key}")]
                 )
+        btn.append(
+            [InlineKeyboardButton(text="𝐍𝐎 𝐌𝐎𝐑𝐄 𝐏𝐀𝐆𝐄𝐒 𝐀𝐕𝐀𝐈𝐋𝐀𝐁𝐋𝐄",callback_data="pages")]
+        ) 
     imdb = await get_poster(search, file=(files[0]).file_name) if settings["imdb"] else None
     cur_time = datetime.now(pytz.timezone('Asia/Kolkata')).time()
     time_difference = timedelta(hours=cur_time.hour, minutes=cur_time.minute, seconds=(cur_time.second+(cur_time.microsecond/1000000))) - timedelta(hours=curr_time.hour, minutes=curr_time.minute, seconds=(curr_time.second+(curr_time.microsecond/1000000)))
