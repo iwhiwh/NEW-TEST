@@ -4,7 +4,7 @@ class script(object):
 ɪ ᴀᴍ ᴘᴏᴡᴇʀ ғᴜʟʟ ᴀᴜᴛᴏ ғɪʟᴛᴇʀ ʙᴏᴛ
 ɪ ᴀᴍ ᴘᴍ sʜᴏʀᴛɴᴇʀ-ʟɪɴᴋ ʙᴏᴛ
 
-ᴍᴀɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/Master_Jiraya">🄼𝗮𝘀𝘁𝗲𝗿 𝗝𝗶𝗿𝗮𝘆𝗮</a></b> 😏</b>"""
+ᴍᴀɴᴛᴀɪɴᴇᴅ ʙʏ : <a href="https://t.me/sahiltalsaniya">Click Here</a></b> 😏</b>"""
 
     
     HELP_TXT = """<b>Hᴇʏ {}
@@ -12,7 +12,7 @@ Hᴇʀᴇ Is Tʜᴇ Hᴇʟᴘ Fᴏʀ Mʏ Cᴏᴍᴍᴀɴᴅs.</b>"""
 
     ABOUT_TXT = """<b>
  🤖 ᴍʏ ɴᴀᴍᴇ : {}
- 👨‍💻 ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/Master_Jiraya'>🄼𝗮𝘀𝘁𝗲𝗿 𝗝𝗶𝗿𝗮𝘆𝗮 🇮🇳</a>
+ 👨‍💻 ᴄʀᴇᴀᴛᴏʀ : <a href='https://t.me/sahiltalsaniya'>Sahil</a>
  📚 ʟɪʙʀᴀʀʏ : Who Care 
  📝 ʟᴀɴɢᴜᴀɢᴇ : Hindi
  ♻️ ᴅᴀᴛᴀ ʙᴀsᴇ : Free wala
@@ -195,7 +195,7 @@ Tɪᴘ: Sᴇʟᴇᴄᴛ "Lᴀɴɢᴜᴀɢᴇs" ᴏʀ "Sᴇᴀsᴏɴs" Bᴜᴛᴛ
 
 𝗠𝗲𝘀𝘀𝗮𝗴𝗲 <b>: {}</b>"""
 
-    CAPTION = """<b><a href=https://t.me/Happy_Hour_Friends>{file_name}</a></b>"""
+    CAPTION = """<b><a href=https://t.me/OTT_Updated>{file_name}</a></b>"""
 
     IMDB_TEMPLATE_TXT = """🍿 Title: <a href={url}>{title}</a>\n🎃 Genres: {genres}\n📅 Year: <a href={url}/releaseinfo>{year}</a>\n⭐ Rating: <a href={url}/ratings>{rating}</a> / 10\n🔉 Audio: हिंदी + English\n\n📕 Story: """
     
